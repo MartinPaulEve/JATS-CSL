@@ -83,8 +83,7 @@
   <macro name="link">
     <choose>
       <if match="any" variable="DOI">
-        <group prefix="&lt;ext-link ext-link-type=&quot;doi&quot; " suffix="&lt;/ext-link&gt;">
-          <text variable="DOI" prefix="xlink:href=&quot;" suffix="&quot; xlink:type=&quot;simple&quot;&gt;"/>
+        <group prefix="&lt;pub-id pub-id-type=&quot;doi&quot;&gt;" suffix="&lt;/pub-id&gt;">
           <text variable="DOI"/>
         </group>
       </if>
