@@ -142,6 +142,9 @@
         <else-if type="book" match="any">
           <text value="book"/>
         </else-if>
+        <else-if type="chapter" match="any">
+          <text value="bookchapter"/>
+        </else-if>
         <else-if type="dataset" match="any">
           <text value="dataset"/>
         </else-if>
