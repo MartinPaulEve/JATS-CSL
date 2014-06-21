@@ -36,6 +36,19 @@
       </substitute>
     </names>
   </macro>
+
+  <macro name="editor">
+    <names variable="editor" prefix="&lt;person-group person-group-type=&quot;editor&quot;&gt;" suffix="&lt;/person-group&gt;">
+      <name delimiter="&lt;/name&gt;&lt;name&gt;" prefix="&lt;name&gt;" suffix="&lt;/name&gt;" name-as-sort-order="all" sort-separator="">
+        <name-part name="family" text-case="capitalize-first" prefix="&lt;surname&gt;" suffix="&lt;/surname&gt;"/>
+        <name-part name="given" text-case="capitalize-first" prefix="&lt;given-names&gt;" suffix="&lt;/given-names&gt;"/>
+      </name>
+      <substitute>
+        <names variable="editor"/>
+      </substitute>
+    </names>
+  </macro>
+
   <macro name="editor">
     <group delimiter=": ">
       <names variable="editor">
@@ -183,6 +196,7 @@
           <text macro="author" prefix="&lt;person-group person-group-type=&quot;author&quot;&gt;" suffix="&lt;/person-group&gt;"/>
           <text macro="title" />
           <text macro="container-title"/>
+          <text macro="editor"/>
           <text macro="publisher"/>
           <text macro="date"/>
           <text macro="location"/>
