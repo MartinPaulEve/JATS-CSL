@@ -141,7 +141,7 @@
       </if>
     </choose>
     <choose>
-      <if type="article-journal article-magazine article-newspaper" match="any">
+      <if type="article-journal article-magazine article-newspaper chapter" match="any">
         <text variable="page-first" prefix="&lt;fpage&gt;" suffix="&lt;/fpage&gt;"/>
       </if>
     </choose>
